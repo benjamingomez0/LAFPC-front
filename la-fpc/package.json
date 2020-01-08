@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
     "@material-ui/core": "^4.8.2",
     "@material-ui/icons": "^4.5.1",
     "chart.js": "^2.9.3",
@@ -12,6 +13,11 @@
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.3.0",
+<<<<<<< HEAD
+=======
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.2",
+>>>>>>> 9dce6267ee83f012b4258a201b0bcd5731906b91
     "styled-components": "^4.4.1"
   },
   "scripts": {
