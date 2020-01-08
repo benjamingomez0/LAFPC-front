@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Redirect, Switch } from 'react-router-dom'
+import { Input, Menu, Segment } from 'semantic-ui-react'
 
 import {HomeDiv, 
         Tiles, 
@@ -20,6 +21,112 @@ import Food from "./img/Food.png"
 import Compost from "./img/Compost.png"
 import Plant from "./img/Plant.png"
 
+import 'semantic-ui-css/semantic.min.css'
+
+import './style.css'
+
+class Homepage extends Component {
+
+    constructor (props){
+        super(props)
+        this.state = {show : false};
+
+        this. toggleDiv = this.toggleDiv.bind(this)
+    }
+
+    toggleDiv = () => {
+        const {show} = this.state;
+        this.setState({show : !show})
+    }
+
+    render() {
+        return (
+            <div class='cardpage'>
+                <div className="Homepage">
+                    <button onClick={this.toggleDiv}><Tiles src={sus} alt={"logo"} />+</button>
+                    <button onClick={this.toggleDiv}><Tiles src={health} alt={"logo"} />+</button>
+                    <button onClick={this.toggleDiv}><Tiles src={afford} alt={"logo"} />+</button>
+                    <button onClick={this.toggleDiv}><Tiles src={fair} alt={"logo"} />+</button>
+                </div>
+                {this.state.show && <Box />}
+            </div>
+        )
+    }
+}
+
+class Box extends Component{
+    render(){
+        return(
+            <div class='box'>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut diam quam. Id ornare arcu odio ut sem nulla. Tortor posuere ac ut consequat. Vehicula ipsum a arcu cursus vitae. Eget nunc lobortis mattis aliquam faucibus. Sagittis vitae et leo duis ut. Diam sit amet nisl suscipit adipiscing. Purus sit amet luctus venenatis lectus. Volutpat lacus laoreet non curabitur. Et malesuada fames ac turpis egestas integer. Aliquet risus feugiat in ante metus dictum at. A scelerisque purus semper eget. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Lorem sed risus ultricies tristique nulla aliquet. Vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. At quis risus sed vulputate odio ut enim blandit.
+                </p>
+                <br></br>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut diam quam. Id ornare arcu odio ut sem nulla. Tortor posuere ac ut consequat. Vehicula ipsum a arcu cursus vitae. Eget nunc lobortis mattis aliquam faucibus. Sagittis vitae et leo duis ut. Diam sit amet nisl suscipit adipiscing. Purus sit amet luctus venenatis lectus. Volutpat lacus laoreet non curabitur. Et malesuada fames ac turpis egestas integer. Aliquet risus feugiat in ante metus dictum at. A scelerisque purus semper eget. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Lorem sed risus ultricies tristique nulla aliquet. Vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. At quis risus sed vulputate odio ut enim blandit.
+                </p>
+
+
+            </div>
+        )
+    }
+}
+
+export default Homepage;
+
+
+
+// export default class MenuExampleTabularOnTop extends Component {
+//     state = { activeItem: 'bio' }
+
+//     handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+
+//     render() {
+//         const { activeItem } = this.state
+
+//         return (
+//             <div>
+//                 <Menu attached='top' tabular>
+//                     <Menu.Item
+//                         name='sustainability'
+//                         active={activeItem === 'sustainability'}
+//                         onClick={this.handleItemClick}
+//                     />
+//                     <Menu.Item
+//                         name='health'
+//                         active={activeItem === 'health'}
+//                         onClick={this.handleItemClick}
+//                     />
+//                     <Menu.Item
+//                         name='affordability'
+//                         active={activeItem === 'affordability'}
+//                         onClick={this.handleItemClick}
+//                     />
+//                     <Menu.Item
+//                         name='fairness'
+//                         active={activeItem === 'fairness'}
+//                         onClick={this.handleItemClick}
+//                     />
+//                     <Menu.Menu position='right'>
+//                         <Menu.Item>
+//                             <Input
+//                                 transparent
+//                                 icon={{ name: 'search', link: true }}
+//                                 placeholder='Search users...'
+//                             />
+//                         </Menu.Item>
+//                     </Menu.Menu>
+//                 </Menu>
+
+//                 <Segment attached='bottom'>
+//                     <h1>
+//                         Hello
+//                     </h1> />
+//                 </Segment>
+//             </div>
+//         )
+//     }
+// }
 
 class Home extends Component {
     render() {
@@ -29,6 +136,9 @@ class Home extends Component {
                         <h1>Food System Dashboard</h1>
                         <p>LAFPC takes great pride at the positive changes we affect in our communities. See below for our in-depth statistics and data on how much our programs improve the loves of those around us.</p>
                     </HeaderDiv>
+
+
+
                     <TileDiv>
                         <a href='/sustainable'><Tiles src={sus} alt={"logo"} /></a>
                         <a href='/healthy'><Tiles src={health} alt={"logo"} /></a>
@@ -61,4 +171,4 @@ class Home extends Component {
     }
 }
 
-export default Home
+// export default Home

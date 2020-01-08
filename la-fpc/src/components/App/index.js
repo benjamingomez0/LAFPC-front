@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch, Redirect, withRouter } from 'react-router-dom';
 import Homepage from '../Homepage';
-import AddAdmin from '../AddAdmin';
+// import AddAdmin from '../AddAdmin';
 import Affordable from '../Affordable';
 import Healthy from '../Healthy';
 import Fair from '../Fair';
@@ -134,7 +134,7 @@ class App extends Component {
                 : 
                 <Route exact path='/' render={(props) =>  <Homepage {...props} />}  />
               }
-              <Route exact path='/addadmin' render={(props) =>  <AddAdmin register={this.register}  {...props} />} />
+              {/* <Route exact path='/addadmin' render={(props) =>  <AddAdmin register={this.register}  {...props} />} /> */}
               <Route exact path='/' render={(props) =>  <Homepage {...props} />}  />
               <Route exact path='/home' render={(props) =>  <Homepage {...props} />}  />
               <Route exact path='/affordable' render={() => <Affordable  isLogged={this.state.isLogged}/>}/>

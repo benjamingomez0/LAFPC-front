@@ -55,3 +55,12 @@ export const UserImg = styled.img`
        opacity: .8;
     }
 `
+
+// export const Homep = styled.div`
+//     margin-top: 3%;
+//     display: flex;
+//     justify-content: center;
+//     padding: 3%;
+//     border-bottom: 2px solid #D1D1D1;
+//     margin: 0 10% 0 10%;
+// `
