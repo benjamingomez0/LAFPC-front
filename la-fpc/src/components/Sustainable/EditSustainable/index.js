@@ -19,10 +19,10 @@ class EditSustainable extends Component{
           <Cancel onClick={this.props.cancelEdit}><CancelIcon /></Cancel>
           <H1>Edit Sustainability</H1>
           <div>
-            <TextField 
-              label='indicator'
+          <TextField 
+              type='indicator'
               type="text" 
-              placeholder="indicatoer" 
+              placeholder="indicator" 
               name="indicator" 
               value={this.props.editData.indicator}
               onChange={this.props.handleFormChange} 
@@ -33,11 +33,11 @@ class EditSustainable extends Component{
           </div>
           <div>
             <TextField 
-              label='baseline'
+              label='location'
               type="text" 
-              placeholder="baseline" 
-              name="baseline"
-              value={this.props.editData.baseline}
+              placeholder="location" 
+              name="location"
+              value={this.props.editData.location}
               onChange={this.props.handleFormChange}
               margin="normal"
               variant="outlined"
@@ -46,76 +46,76 @@ class EditSustainable extends Component{
           </div>
           <div>
             <TextField
-              label='update'
-              type="text" 
-              placeholder="update" 
-              name="update" 
-              value={this.props.editData.update[0]}
-              onChange={this.props.handleFormChange}
-              margin="normal"
-              variant="outlined"
-              style={{margin: "10px"}}
-            />
-            <div>
-            <div>
-            <TextField 
-              label='sources'
-              type="text" 
-              placeholder="sources" 
-              name="sources"
-              value={this.props.editData.sources} 
-              onChange={this.props.handleFormChange} 
-              margin="normal"
-              variant="outlined"
-              style={{margin: "10px"}}
-            />
-          </div>
-          <div>
-            <TextField 
-              label='change'
-              type="text" 
-              placeholder="change" 
-              name="change" 
-              value={this.props.editData.change}
-              onChange={this.props.handleFormChange}
-              margin="normal"
-              variant="outlined"
-              style={{margin: "10px"}}
-            />
-          </div>
-          <div>
-            <TextField 
-              label='notes'
-              type="text" 
-              placeholder="notes" 
-              name="notes" 
-              value={this.props.editData.notes}
-              onChange={this.props.handleFormChange} 
-              margin="normal"
-              variant="outlined"
-              style={{margin: "10px"}}
-            />
-          </div>
-          <div>
-            <TextField 
-              label='data status'
-              type="text" 
-              placeholder="data status" 
-              name="dataStatus" 
-              value={this.props.editData.dataStatus}
-              onChange={this.props.handleFormChange} 
-              margin="normal"
-              variant="outlined"
-              style={{margin: "10px"}}
-            />
-          </div>
-          <div>
-            <TextField 
               label='group'
               type="text" 
               placeholder="group" 
-              name="group"
-              value={this.props.editData.group} 
+              name="group" 
+              value={this.props.editData.group}
+              onChange={this.props.handleFormChange}
+              margin="normal"
+              variant="outlined"
+              style={{margin: "10px"}}
+            />
+            <div>
+            <div>
+            <TextField 
+              label='source'
+              type="text" 
+              placeholder="source" 
+              name="source"
+              value={this.props.editData.source} 
+              onChange={this.props.handleFormChange} 
+              margin="normal"
+              variant="outlined"
+              style={{margin: "10px"}}
+            />
+          </div>
+          <div>
+            <TextField 
+              label='val2013'
+              type="text" 
+              placeholder="" 
+              name="val2013" 
+              value={this.props.editData.val2013}
+              onChange={this.props.handleFormChange}
+              margin="normal"
+              variant="outlined"
+              style={{margin: "10px"}}
+            />
+          </div>
+          <div>
+            <TextField 
+              label='val2017'
+              type="text" 
+              placeholder="val2017" 
+              name="val2017" 
+              value={this.props.editData.val2017}
+              onChange={this.props.handleFormChange} 
+              margin="normal"
+              variant="outlined"
+              style={{margin: "10px"}}
+            />
+          </div>
+          <div>
+            <TextField 
+              label='val2020'
+              type="text" 
+              placeholder="val2020" 
+              name="val2020" 
+              value={this.props.editData.val2020}
+              onChange={this.props.handleFormChange} 
+              margin="normal"
+              variant="outlined"
+              style={{margin: "10px"}}
+            />
+          </div>
+          <div>
+            <TextField 
+              label='outcome'
+              type="text" 
+              placeholder="outcome" 
+              name="outcome"
+              value={this.props.editData.outcome} 
               onChange={this.props.handleFormChange} 
               margin="normal"
               variant="outlined"

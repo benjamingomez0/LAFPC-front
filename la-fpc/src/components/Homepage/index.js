@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import { Redirect, Switch } from 'react-router-dom'
+
+import { withRouter, Link } from 'react-router-dom'
+
 import { Input, Menu, Segment } from 'semantic-ui-react'
+
 
 import {HomeDiv, 
         Tiles, 
