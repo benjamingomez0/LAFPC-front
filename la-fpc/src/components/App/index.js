@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch, Redirect, withRouter } from 'react-router-dom';
 import Homepage from '../Homepage';
-<<<<<<< HEAD
 import AddAdmin from '../addAdmin';
-=======
-// import AddAdmin from '../AddAdmin';
->>>>>>> 9dce6267ee83f012b4258a201b0bcd5731906b91
 import Affordable from '../Affordable';
 import Healthy from '../Healthy';
 import Fair from '../Fair';
