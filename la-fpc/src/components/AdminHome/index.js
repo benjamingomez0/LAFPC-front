@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Redirect, Switch } from 'react-router-dom'
+import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom';
 
 import {HomeDiv, 
         Tiles, 
@@ -25,11 +27,25 @@ class AdminHome extends Component{
                     <h1>Admin Home Page</h1>
                 </HeaderDiv>
                 <TileDiv>
-                    <a href='/sustainable'><Tiles src={sus} alt={"logo"} /></a>
-                    <a href='/healthy'><Tiles src={health} alt={"logo"} /></a>
-                    <a href='/affordable'><Tiles src={afford} alt={"logo"} /></a>
-                    <a href='/fair'><Tiles src={fair} alt={"logo"} /></a>
+                    <Link to={'/sustainable'}><Tiles src={sus} alt={"logo"} /> </Link>
+                    <Link to={'/healthy'}><Tiles src={health} alt={"logo"} /> </Link>
+                    <Link to={'/Linkffordable'}><Tiles src={afford} alt={"logo"} /> </Link>
+                    <Link to={'/fair'}><Tiles src={fair} alt={"logo"} /> </Link>
                 </TileDiv>
+                <Button
+                style={{margin:'20px', color:'grey', fontWeight:'bold', border: '1px solid black'}}
+                component={ Link } 
+                to = {'/addAdmin'}
+                >   
+                Add User
+                </Button>
+                <Button
+                style={{margin:'20px', color:'grey', fontWeight:'bold', border: '1px solid black'}}
+                component={ Link } 
+                >
+                Edit User
+                </Button>
+
             </HomeDiv>
     )
 }

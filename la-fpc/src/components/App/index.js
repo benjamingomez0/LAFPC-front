@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Route, Switch, Redirect, withRouter } from 'react-router-dom';
 import Homepage from '../Homepage';
-// import AddAdmin from '../AddAdmin';
+
+import AddAdmin from '../addAdmin';
 import Affordable from '../Affordable';
 import Healthy from '../Healthy';
 import Fair from '../Fair';
@@ -52,7 +53,8 @@ class App extends Component {
           'Content-Type': 'application/json'
         }
       })
-      const parsedResponse = await registerResponse.json()
+      const parsedResponse = await registerResponse.json();
+      console.log(parsedResponse,'<===== this is admin')
       console.log(parsedResponse, 'this is register response')
       localStorage.setItem('admin', parsedResponse.data.username)
       localStorage.setItem('loggedIn', true)
