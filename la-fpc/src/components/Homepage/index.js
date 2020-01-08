@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Redirect, Switch } from 'react-router-dom'
-
+import { withRouter, Link } from 'react-router-dom'
 import {HomeDiv, 
         Tiles, 
         TileDiv,

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route, withRouter } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
-
+import Switch from '@material-ui/core/Switch';
 
 
 class AddAdmin extends Component {
@@ -11,16 +11,22 @@ class AddAdmin extends Component {
     username: '',
     password: '',
     repassword: '',
-    keycode: '',
+    isAdmin:false,
+    isActive:false,
     error: {
       username: '',
       password: '',
-      keycode: '',
     }
   }
 
   onInputChange = (e) => { this.setState({ [e.target.name]: e.target.value }) 
   };
+  onAdminChange =() =>{
+    this.setState({isAdmin:!this.state.isAdmin})
+  };
+  onActiveChange=() =>{
+    this.setState({isActive:!this.state.isActive})
+  }
 
   validate = () => {
     if (this.state.username.length < 1) {
@@ -45,21 +51,11 @@ class AddAdmin extends Component {
       })
         return false
       }
-      if (this.state.keycode !== 'foodpolicy') {
-        this.setState({
-          error: {
-            keycode: 'enter in correct keycode'
-          }
-        })
-        return false
-      } else{
-        return true
-
-      }
+    return true;
   };
 
   submit = async (e) => {
-    console.log('hitting')
+    // console.log('hitting')
     e.preventDefault();
     const isValid = this.validate();
     if(isValid) {
@@ -76,7 +72,7 @@ class AddAdmin extends Component {
     console.log(this.state)
       return (
           <div>
-              <h1 style={{textAlign:'center'}}>Register as an Admin</h1>
+              <h1 style={{textAlign:'center'}}>Register A New Admin</h1>
               <form onSubmit={this.submit} style={{display:'flex', alignItems:'center', flexDirection:'column'}}>
                 <div>
                   <TextField 
@@ -117,25 +113,22 @@ class AddAdmin extends Component {
                     <small>{this.state.error.password}</small>
                   </div>
                   </div>
-                  <div>
-                  <TextField
-                    label='Key Code'
-                    type="keycode" 
-                    placeholder="keycode" 
-                    name="keycode" 
-                    onChange={this.onInputChange}
-                    margin="normal"
-                    variant="outlined"
+                  Admin:
+                  <Switch
+                    name="isAdmin"
+                    inputProps={{ 'aria-label': 'primary checkbox' }}
+                    onChange={this.onAdminChange}
                   />
-                  <div>
-                    <small>{this.state.error.keycode}</small>
-                  </div>
-                </div>
+                  <Switch
+                    name="isActive"
+                    inputProps={{ 'aria-label': 'secondary checkbox' }}
+                    onChange={this.onActiveChange}
+                  />
                 <Button 
                   type="submit" 
                   variant="outlined" 
                   style={{margin: "10px"}}
-                  >Sign Up
+                  >Register User
                 </Button>
               </form>
           </div>
