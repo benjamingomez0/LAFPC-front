@@ -80,14 +80,6 @@ class SignIn extends Component {
                   style={{margin:'5px'}} >
                     SignIn
                   </Button>
-                <Button 
-                  component={ LinkRoute } 
-                  to='/AddAdmin' 
-                  color="inherit"
-                  variant="outlined"
-                  style={{margin:'10px'}} >
-                    SignUp
-                </Button>
               </form>
           </div>
       )
