@@ -136,7 +136,7 @@ class App extends Component {
                 : 
                 <Route exact path='/' render={(props) =>  <Homepage {...props} />}  />
               }
-              {/* <Route exact path='/addadmin' render={(props) =>  <AddAdmin register={this.register}  {...props} />} /> */}
+              <Route exact path='/addAdmin' render={(props) =>  <AddAdmin register={this.register}  {...props} />} />
               <Route exact path='/' render={(props) =>  <Homepage {...props} />}  />
               <Route exact path='/home' render={(props) =>  <Homepage {...props} />}  />
               <Route exact path='/affordable' render={() => <Affordable  isLogged={this.state.isLogged}/>}/>
