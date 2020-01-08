@@ -119,6 +119,7 @@ class AddAdmin extends Component {
                     inputProps={{ 'aria-label': 'primary checkbox' }}
                     onChange={this.onAdminChange}
                   />
+                  Active:
                   <Switch
                     name="isActive"
                     inputProps={{ 'aria-label': 'secondary checkbox' }}
