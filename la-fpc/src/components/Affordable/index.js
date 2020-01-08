@@ -35,15 +35,14 @@ class Affordable extends Component {
     dataModalProperty: '',
     editData: {
       _id: null,
-      value:'affordable',
+      pillar:'affordable',
       indicator: '',
-      baseline: '',
-      update: '',
-      sources: '',
-      change: '',
-      notes: '',
-      dataStatus: '',
-      group: '',
+      location: '',
+      source: '',
+      val2013: '',
+      val2017: '',
+      val2020: '',
+      outcome: '',
       error: ''
     },
   }
@@ -219,13 +218,13 @@ class Affordable extends Component {
                   null
                 }
                 <TableDataHeader><H1>Indicator</H1></TableDataHeader>
-                <TableDataHeader><H1>Baseline</H1></TableDataHeader>
-                <TableDataHeader><H1>Update</H1></TableDataHeader>
-                <TableDataHeader><H1>Sources</H1></TableDataHeader>
-                <TableDataHeader><H1>Change</H1></TableDataHeader>
-                <TableDataHeader><H1>Notes</H1></TableDataHeader>
-                <TableDataHeader><H1>Data Status</H1></TableDataHeader>
+                <TableDataHeader><H1>Location</H1></TableDataHeader>
                 <TableDataHeader><H1>Group</H1></TableDataHeader>
+                <TableDataHeader><H1>Source</H1></TableDataHeader>
+                <TableDataHeader><H1>2013</H1></TableDataHeader>
+                <TableDataHeader><H1>2017</H1></TableDataHeader>
+                <TableDataHeader><H1>2020</H1></TableDataHeader>
+                <TableDataHeader><H1>Outcome</H1></TableDataHeader>
               </Row>
               {
                 affordableData.map((data, i) => {
@@ -245,25 +244,25 @@ class Affordable extends Component {
                         <P>{data.indicator}</P>
                       </TableData>
                       <TableData onClick={(e) => this.showData(e)}>
-                        <P>{data.baseline}</P>
-                      </TableData>
-                      <TableData onClick={(e) => this.showData(e)}>
-                        <P>{data.update}</P>
-                      </TableData>
-                      <TableData onClick={(e) => this.showData(e)}>
-                        <P>{data.sources}</P>
-                      </TableData>
-                      <TableData onClick={(e) => this.showData(e)}>
-                        <P>{data.change}</P>
-                      </TableData>
-                      <TableData onClick={(e) => this.showData(e)}>
-                        <P>{data.notes}</P>
-                      </TableData>
-                      <TableData onClick={(e) => this.showData(e)}>
-                        <P>{data.dataStatus}</P>
+                        <P>{data.location}</P>
                       </TableData>
                       <TableData onClick={(e) => this.showData(e)}>
                         <P>{data.group}</P>
+                      </TableData>
+                      <TableData onClick={(e) => this.showData(e)}>
+                        <P>{data.source}</P>
+                      </TableData>
+                      <TableData onClick={(e) => this.showData(e)}>
+                        <P>{data.val2013}</P>
+                      </TableData>
+                      <TableData onClick={(e) => this.showData(e)}>
+                        <P>{data.val2017}</P>
+                      </TableData>
+                      <TableData onClick={(e) => this.showData(e)}>
+                        <P>{data.val2020}</P>
+                      </TableData>
+                      <TableData onClick={(e) => this.showData(e)}>
+                        <P>{data.outcome}</P>
                       </TableData>
                     </Row>
                   )
