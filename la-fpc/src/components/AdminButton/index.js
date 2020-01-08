@@ -38,14 +38,14 @@ class AdminButton extends Component {
                 >
                   <HomeIcon />
                 </Button>
-                <Button 
+                {/* <Button 
                 component={ LinkRoute } 
                 to='/SignIn' 
                 color="inherit"
                 style={{margin:'20px', color:'white', fontWeight:'bold'}}
                 >
                   Admin
-                </Button>
+                </Button> */}
               </Grid>
             </Grid>
           </div>
