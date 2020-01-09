@@ -4,7 +4,7 @@ export const Container = styled.div`
   z-index: 100;
   position: absolute;
   width: 100%;
-  background: #8bc147;
+  background: #ADC692;
   display: flex;
   justify-content: center;
 `
@@ -19,12 +19,12 @@ export const Form = styled.form`
 `
 
 export const H1 = styled.h1`
-  color: #8bc147;
+  color: #ADC692;
 `
 
 export const Cancel = styled.h1`
   width: 100%;
   margin: 0px;
   text-align: right;
-  color: #8bc147;
+  color: #ADC692;
 `

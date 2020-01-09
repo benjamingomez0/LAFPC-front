@@ -11,7 +11,7 @@ export const DivDataModal = styled.div`
   position: absolute;
   width: 100%;
   height: 60%;
-  background: #aae0f4;
+  background: #EF6C57;
   display: flex;
   justify-content: center;
 `
@@ -42,7 +42,7 @@ export const TableData = styled.div`
   text-align: center;
   overflow: hidden;
   &:hover {
-    background: #aae0f4;
+    background: #EF6C57;
     opacity: .8;
   }
 `
@@ -69,7 +69,7 @@ export const Button = styled.button`
 export const H1 = styled.h1`
   font-size: 1em;
   font-weight: normal;
-  background: #aae0f4;
+  background: #EF6C57;
   margin: 0px;
   margin-bottom: 2px;
   color: white;

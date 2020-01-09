@@ -16,7 +16,7 @@ export const DivInput = styled.div`
   width: 11%;
   height: 30px;
   &:hover Input {
-    background: #aae0f4;
+    background: #EF6C57;
   }
 `
 

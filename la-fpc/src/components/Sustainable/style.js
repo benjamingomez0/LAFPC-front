@@ -11,7 +11,7 @@ export const DivDataModal = styled.div`
   position: absolute;
   width: 100%;
   height: 60%;
-  background: #8bc147;
+  background: #ADC692;
   display: flex;
   justify-content: center;
 `
@@ -69,7 +69,7 @@ export const Button = styled.button`
 export const H1 = styled.h1`
   font-size: 1em;
   font-weight: normal;
-  background: #8bc147;
+  background: #ADC692;
   margin: 0px;
   margin-bottom: 2px;
   color: white;

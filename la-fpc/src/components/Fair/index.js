@@ -193,11 +193,11 @@ class Fair extends Component {
             </DescribSec>
             <ChartDiv>
               <ToolKit>
-                  <Button style={{backgroundColor:'#D6D7AD', marginTop:"10px"}} fullWidth>Number of Properties</Button>
-                  <Button style={{backgroundColor:'#D6D7AD', marginTop:"10px"}} fullWidth>Grocery Stores</Button>
-                  <Button style={{backgroundColor:'#D6D7AD', marginTop:"10px"}} fullWidth>Food Consumption</Button>
-                  <Button style={{backgroundColor:'#D6D7AD', marginTop:"10px"}} fullWidth>Obesity Percentage</Button>
-                  <Button style={{backgroundColor:'#D6D7AD', marginTop:"10px"}} fullWidth>Health Diagnosis Percentage</Button>
+                  <Button style={{backgroundColor:'#FFC108', marginTop:"10px"}} fullWidth>Number of Properties</Button>
+                  <Button style={{backgroundColor:'#FFC108', marginTop:"10px"}} fullWidth>Grocery Stores</Button>
+                  <Button style={{backgroundColor:'#FFC108', marginTop:"10px"}} fullWidth>Food Consumption</Button>
+                  <Button style={{backgroundColor:'#FFC108', marginTop:"10px"}} fullWidth>Obesity Percentage</Button>
+                  <Button style={{backgroundColor:'#FFC108', marginTop:"10px"}} fullWidth>Health Diagnosis Percentage</Button>
               </ToolKit>
               <ToolKit>
                 <Graph fairData={this.state.fairData} />
