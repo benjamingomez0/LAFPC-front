@@ -5,7 +5,9 @@ export const HomeDiv = styled.div`
     text-align:center;
 `
 export const Tiles = styled.img`
-    height: 50vh;
+
+height: 20vh;
+
 `
 
 export const TileDiv = styled.div`
@@ -14,7 +16,7 @@ export const TileDiv = styled.div`
     justify-content: center;
     padding: 3%;
     border-bottom: 2px solid #D1D1D1;
-    margin: 0 10% 0 10%;
+   
 `
 
 export const HeaderDiv = styled.div`
