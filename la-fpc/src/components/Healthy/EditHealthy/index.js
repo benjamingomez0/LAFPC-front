@@ -87,7 +87,7 @@ class EditHealthy extends Component{
             <TextField 
               label='val2017'
               type="text" 
-              placeholder="val2017" 
+              placeholder="" 
               name="val2017" 
               value={this.props.editData.val2017}
               onChange={this.props.handleFormChange} 
@@ -100,7 +100,7 @@ class EditHealthy extends Component{
             <TextField 
               label='val2020'
               type="text" 
-              placeholder="val2020" 
+              placeholder="" 
               name="val2020" 
               value={this.props.editData.val2020}
               onChange={this.props.handleFormChange} 
