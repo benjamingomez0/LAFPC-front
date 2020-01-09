@@ -16,7 +16,7 @@ class Navbar extends Component {
                             className='nav-button'
                             component={ LinkRoute } 
                             to='/sustainable'
-                            style={{backgroundColor:'#8BC147', color:'white', fontWeight:'bold', borderColor:'#8BC147'}}
+                            style={{backgroundColor:'#ADC692', color:'white', fontWeight:'bold', borderColor:'#ADC692'}}
                         >
                             Sustainability
                         </Button>
@@ -24,7 +24,7 @@ class Navbar extends Component {
                             className='nav-button'
                             component={ LinkRoute } 
                             to='/healthy/showmore' 
-                            style={{backgroundColor:'#AAE0F4', color:'white', fontWeight:'bold', borderColor:'#AAE0F4'}}
+                            style={{backgroundColor:'#EF6C57', color:'white', fontWeight:'bold', borderColor:'#EF6C57'}}
                         >
                             Health
                         </Button>
@@ -33,7 +33,7 @@ class Navbar extends Component {
                             className='nav-button' 
                             component={ LinkRoute } 
                             to='/affordable' 
-                            style={{backgroundColor:'#F4934D', color:'white', fontWeight:'bold', borderColor:'#F4934D'}}
+                            style={{backgroundColor:'#7ED3B1', color:'white', fontWeight:'bold', borderColor:'#7ED3B1'}}
                         >
                             Affordability
                         </Button>
@@ -41,7 +41,7 @@ class Navbar extends Component {
                             className='nav-button' 
                             component={ LinkRoute } 
                             to='/fair' 
-                            style={{backgroundColor:'#D6D7AD', color:'white', fontWeight:'bold', borderColor:'#D6D7AD'}}
+                            style={{backgroundColor:'#FFC108', color:'white', fontWeight:'bold', borderColor:'#FFC108'}}
                         >
                             Fairness
                         </Button>
