@@ -12,7 +12,7 @@ class AdminButton extends Component {
 
   render() {
       return (
-        <div style={{backgroundImage:`url(${Banner})`, backgroundPosition:'center', backgroundSize:'cover'}}>
+        <div style={{backgroundColor: 'white',backgroundPosition:'center', backgroundSize:'cover'}}>
           <div style={{marginLeft: '30px', marginRight: '30px'}}>
             <Grid container spacing={3} style={{alignItems:'center'}}>
               <Grid item xs>
@@ -23,7 +23,7 @@ class AdminButton extends Component {
               <Grid item xs>
                 <div>
                   <div style={{textAlign:'center', alignItems: 'center'}}>
-                    <Button size='large' component={ LinkRoute } to='/home' style={{color:'white', fontWeight: 'bold'}}>
+                    <Button size='large' component={ LinkRoute } to='/home' style={{color:'black', fontWeight: 'bold'}}>
                       LAFPC Food System Dashboard
                     </Button>
                   </div>
@@ -34,7 +34,7 @@ class AdminButton extends Component {
                   component={ LinkRoute } 
                   to='/'
                   color="inherit"
-                  style={{margin:'0', color:'white', fontWeight:'bold'}}
+                  style={{margin:'0', color:'black', fontWeight:'bold'}}
                 >
                   <HomeIcon />
                 </Button>

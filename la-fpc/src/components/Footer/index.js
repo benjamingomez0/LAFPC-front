@@ -16,11 +16,12 @@ class Footer extends Component{
                     <FacebookIcon style={{margin:'10px'}}/>
                     <InstagramIcon style={{margin:'10px'}}/>
                     <TwitterIcon style={{margin:'10px'}}/>
+                    <br/>
                     <Button
                         component={LinkRoute}
                         to='/SignIn'
                         color="inherit"
-                        style={{ margin: '20px', color: 'white', fontWeight: 'bold' }}
+                        style={{ margin: '20px 0px 20px 0px', color: 'white', fontWeight: 'bold' }}
                     >
                         Admin
                     </Button>
