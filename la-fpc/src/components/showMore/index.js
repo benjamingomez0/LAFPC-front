@@ -53,13 +53,7 @@ export default class ShowMore extends Component {
                                                 </Card.Content>
                                                 <Card.Content extra>
                                                     <MyPopup content="Detail">
-                                                        {/* <Button labelPosition='right' floated='right' as={Link} to={`/home`}>
-                                                            <Button color='green' basic>
-                                                                <Icon name='add' size='large'/>
-                                                            </Button>
-                                                            <Label basic color='blue' pointing='right'>
-                                                            </Label>
-                                                        </Button> */}
+                                                        
                                                         <Button floated='right' as={Link} to={`/healthy`} color='blue'>
                                                             <Icon name='add' color='white' size='large'/>
                                                         </Button>
