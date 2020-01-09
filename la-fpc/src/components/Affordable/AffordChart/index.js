@@ -26,7 +26,7 @@ class Donut extends Component {
         const data = {
             labels: props.affordableData.map(r => { return r.group }),
             datasets: [{
-                data: props.affordableData.map(r => { return r.baseline }),
+                data: props.affordableData.map(r => { return r.val2017 }),
                 backgroundColor: colorArray,
                 hoverBackgroundColor: this.hover(colorArray)
             }]
