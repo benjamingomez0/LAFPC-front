@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Line } from 'react-chartjs-2'
+import { Doughnut } from 'react-chartjs-2'
 import style from './style.module.css'
 
 
@@ -26,8 +26,6 @@ class Graph extends Component {
         const data = {
             labels: props.affordableData.map(r => { return r.group }),
             datasets: [{
-                data: props.affordableData.map(r => { return r.val2013 }),
-                data: props.affordableData.map(r => { return r.val2017 }),
                 data: props.affordableData.map(r => { return r.val2020 }),
                 backgroundColor: colorArray,
                 hoverBackgroundColor: this.hover(colorArray)
@@ -40,8 +38,8 @@ class Graph extends Component {
         return (
             <div>
                 <div className={style.canvas}>
-                  <h3>Baseline {this.props.affordableData[0] && this.props.affordableData[0].indicator}</h3>
-                        <Line data={this.dataHandler(this.props)} />
+                  <h3> {this.props.affordableData[0] && this.props.affordableData[0].indicator}</h3>
+                        <Doughnut data={this.dataHandler(this.props)} />
                     </div>
             </div>
         )
