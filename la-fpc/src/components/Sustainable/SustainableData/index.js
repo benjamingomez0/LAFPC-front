@@ -14,7 +14,7 @@ import {
 class SustainableData extends Component{
 
   state = {
-    value: 'sustainable',
+    pillar: 'sustainable',
     indicator: '',
     location: '',
     group: '',
