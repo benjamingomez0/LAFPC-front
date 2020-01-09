@@ -58,7 +58,7 @@ class Healthy extends Component {
         }
       })
       const oldData = await data.json()
-      const healthData = oldData.data.filter(data => data.value === 'healthy')
+      const healthData = oldData.data.filter(data => data.pillar === 'healthy')
       this.setState({
         healthyData: healthData
       })

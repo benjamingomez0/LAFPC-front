@@ -63,7 +63,7 @@ class Sustainable extends Component {
         }
       })
       const oldData = await data.json()
-      const sustainData = oldData.data.filter(data => data.value === 'sustainable')
+      const sustainData = oldData.data.filter(data => data.pillar === 'sustainable')
       this.setState({
         sustainableData: sustainData
       })

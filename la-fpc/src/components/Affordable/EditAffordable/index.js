@@ -72,7 +72,7 @@ class EditAffordable extends Component{
           </div>
           <div>
             <TextField 
-              label='val2013'
+              label='2013'
               type="text" 
               placeholder="" 
               name="val2013" 
@@ -85,7 +85,7 @@ class EditAffordable extends Component{
           </div>
           <div>
             <TextField 
-              label='val2017'
+              label='2017'
               type="text" 
               placeholder="" 
               name="val2017" 
@@ -98,7 +98,7 @@ class EditAffordable extends Component{
           </div>
           <div>
             <TextField 
-              label='val2020'
+              label='2020'
               type="text" 
               placeholder="" 
               name="val2020" 

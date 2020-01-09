@@ -61,7 +61,7 @@ class Affordable extends Component {
         }
       })
       const oldData = await data.json()
-      const affordData = oldData.data.filter(data => data.value === 'affordable')
+      const affordData = oldData.data.filter(data => data.pillar === 'affordable')
       this.setState({
         affordableData: affordData
       })
