@@ -1,6 +1,4 @@
 button {
-  /* border: red 2px solid; */
-  /* border: 1px solid black; */
   display: inline;
   align-items: center;
   justify-content: center;
@@ -8,31 +6,26 @@ button {
   background-color:#D5DEAE;
   padding: 0 10%;
 }
+
 .oneThree {
 background-color : #ffffff;
 }
-/* div.cardpage {
-  border: red 2px solid;
-} */
-/* .Homepage {
-border: 1px solid black;
-display: flex;
-align-items: center;
-justify-content: center;
-} */
+
 .box {
-/* border: 1px solid black; */
 display: inline;
 align-items: center;
 justify-content: center;
 }
+
 .sample{
   width: 250px;
   height:40vh;
 }
+
 .card {
 background-color: #D5DEAE;
 }
+
 header {
 position: relative;
 height: 800px;
@@ -44,6 +37,7 @@ background-size: cover !important;
 text-align: center;
 overflow: hidden;
 }
+
 header .scrolldown a {
 position: absolute;
 bottom: 30px;
@@ -62,6 +56,7 @@ border-radius: 100%;
 -o-transition: all .3s ease-in-out;
 transition: all .3s ease-in-out;
 }
+
 header .scrolldown a:hover { color: #4c54f5; }
 
 .homepage-header-text{
@@ -73,19 +68,12 @@ header .scrolldown a:hover { color: #4c54f5; }
 
 }
 
-/* .svg-container{
- border: 3px solid white;
- width:17vh;
- height:17vh;
- border-radius:50%;
- margin: 0 auto;
-} */
-
 .down-arrow{
   width:12vh;
   height:6vh;
   opacity:.7;
 }
+
 .down-arrow:hover{
   opacity:1;
 }
