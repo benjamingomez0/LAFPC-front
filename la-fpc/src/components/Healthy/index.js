@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import HealthyData from './HealthyData';
 import EditHealthy from './EditHealthy';
-import Donut from './HealthyChart';
+import Graph from './HealthyChart';
 import Button from '@material-ui/core/Button';
 import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
@@ -281,7 +281,7 @@ class Healthy extends Component {
                   <Button style={{backgroundColor:'#AAE0F4', marginTop:"10px"}} fullWidth>Health Diagnosis Percentage</Button>
               </ToolKit>
               <ToolKit>
-                <Donut healthyData={this.state.healthyData} />
+                <Graph healthyData={this.state.healthyData} />
               </ToolKit>
             </ChartDiv>
           </Container>
