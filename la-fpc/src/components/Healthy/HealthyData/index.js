@@ -14,7 +14,7 @@ import {
 class HealthyData extends Component{
 
   state = {
-    value: 'healthy',
+    pillar: 'healthy',
     indicator: '',
     location: '',
     group: '',
