@@ -26,6 +26,8 @@ class Graph extends Component {
         const data = {
             labels: props.fairData.map(r => { return r.group }),
             datasets: [{
+                data: props.fairData.map(r => { return r.val2013 }),
+                data: props.fairData.map(r => { return r.val2017 }),
                 data: props.fairData.map(r => { return r.val2020 }),
                 backgroundColor: colorArray,
                 hoverBackgroundColor: this.hover(colorArray)

@@ -26,6 +26,8 @@ class Graph extends Component {
         const data = {
             labels: props.sustainableData.map(r => { return r.group }),
             datasets: [{
+                data: props.sustainableData.map(r => { return r.val2013 }),
+                data: props.sustainableData.map(r => { return r.val2017 }),
                 data: props.sustainableData.map(r => { return r.val2020 }),
                 backgroundColor: colorArray,
                 hoverBackgroundColor: this.hover(colorArray)
