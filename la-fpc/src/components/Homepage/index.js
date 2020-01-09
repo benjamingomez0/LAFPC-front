@@ -68,7 +68,7 @@ class Homepage extends Component {
                         sus:true,
                         fair:false,
                         health: false,
-                        text: < Sustainable isLogged={this.props.isLogged} />,
+                        text: <div>< Sustainable isLogged={this.props.isLogged} /><Link to ={'/'}><button> Show More </button></Link></div>,
                     });  
                 }            
             }
@@ -80,7 +80,7 @@ class Homepage extends Component {
                     aff:false,
                     health:false,
                     fair:false,
-                    text: < Sustainable isLogged={this.props.isLogged} /> 
+                    text: <div>< Sustainable isLogged={this.props.isLogged} /><Link to ={'/'}><button> Show More </button></Link></div>
                     });  
             }
 
@@ -141,7 +141,7 @@ class Homepage extends Component {
             else
             {
                 this.setState({
-                    text: < Affordable isLogged={this.props.isLogged} />,   
+                    text:<div>< Affordable isLogged={this.props.isLogged} /><Link to ={'/'}><button> Show More </button></Link></div>,   
                     aff:!this.state.aff,
                     health:false,
                     sus:false,
@@ -158,7 +158,7 @@ class Homepage extends Component {
                 health:false,
                 sus:false,
                 fair:false,
-                text: < Affordable isLogged={this.props.isLogged} />   
+                text: <div>< Affordable isLogged={this.props.isLogged} /><Link to ={'/'}><button> Show More </button></Link></div>   
                 });  
         }
     }
@@ -179,7 +179,7 @@ class Homepage extends Component {
             else
             {
                 this.setState({
-                    text: < Fair isLogged={this.props.isLogged} />,   
+                    text: <div>< Fair isLogged={this.props.isLogged} /><Link to ={'/'}><button> Show More </button></Link></div>,   
                     fair:!this.state.fair,
                     health:false,
                     sus:false,
@@ -196,7 +196,7 @@ class Homepage extends Component {
                 health:false,
                 sus:false,
                 aff:false,
-                text: < Fair isLogged={this.props.isLogged} />   
+                text: <div>< Fair isLogged={this.props.isLogged} /><Link to ={'/'}><button> Show More </button></Link></div>   
                 });  
         }
     }

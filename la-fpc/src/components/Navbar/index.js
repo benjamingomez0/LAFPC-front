@@ -23,7 +23,7 @@ class Navbar extends Component {
                         <Button 
                             className='nav-button'
                             component={ LinkRoute } 
-                            to='/healthy' 
+                            to='/healthy/showmore' 
                             style={{backgroundColor:'#AAE0F4', color:'white', fontWeight:'bold', borderColor:'#AAE0F4'}}
                         >
                             Health
