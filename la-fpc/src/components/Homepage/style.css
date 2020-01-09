@@ -5,6 +5,8 @@ button {
   border-style: none;
   background-color:#D5DEAE;
   padding: 0 10%;
+  outline: none;
+
 }
 
 .oneThree {
@@ -76,4 +78,12 @@ header .scrolldown a:hover { color: #4c54f5; }
 
 .down-arrow:hover{
   opacity:1;
+}
+
+button img {
+  transform: all ease 5000ms;
+}
+
+button img:hover {
+  transform: scale(1.05);
 }

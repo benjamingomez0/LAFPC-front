@@ -16,7 +16,7 @@ import './style.css'
 
 //image imports
 import afford from "./img/affordable.png"
-import fair from "./img/fair.png"
+import fair from "./img/Fair.png"
 import health from "./img/healthy.png"
 import sus from "./img/sustainable.png"
 import appleBiz from "./img/apple-biz.jpg"
