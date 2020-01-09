@@ -24,7 +24,7 @@ export default class ShowMore extends Component {
                 }
             })
             const oldData = await data.json()
-            const healthData = oldData.data.filter(data => data.value === 'healthy')
+            const healthData = oldData.data.filter(data => data.pillar === 'healthy')
             this.setState({
                 healthyData: healthData
             })
@@ -45,11 +45,11 @@ export default class ShowMore extends Component {
                             {
                                 healthyData && healthyData.map((data) => {
                                     return (
-                                        <Grid.Column key={data.id} style={{ marginBottom: 20 }}>
+                                        <Grid.Column key={data._id} style={{ marginBottom: 20 }}>
                                             <Card color="violet" fluid>
                                                 <Card.Content>
-                                                    <Card.Header>{data.indicator}</Card.Header>
-                                                    <Card.Description>Something</Card.Description>
+                                                    <Card.Header>{data.outcome}</Card.Header>
+                                                    <Card.Description>{data.outcome}</Card.Description>
                                                 </Card.Content>
                                                 <Card.Content extra>
                                                     <MyPopup content="Detail">
@@ -60,7 +60,7 @@ export default class ShowMore extends Component {
                                                             <Label basic color='blue' pointing='right'>
                                                             </Label>
                                                         </Button> */}
-                                                        <Button floated='right' as={Link} to={`/home`} color='blue'>
+                                                        <Button floated='right' as={Link} to={`/healthy`} color='blue'>
                                                             <Icon name='add' color='white' size='large'/>
                                                         </Button>
                                                     </MyPopup>

@@ -181,7 +181,6 @@ class Fair extends Component {
 
     render(){
       const { fairData, editData, showEditModal, showDataModal, dataModalProperty } = this.state;
-      const { isLogged } = this.props.isLogged
         return(
           <Container>
             <DescribSec>

@@ -180,7 +180,7 @@ class Sustainable extends Component {
 
     render(){
       const { sustainableData, editData, showEditModal, showDataModal, dataModalProperty } = this.state;
-      const { isLogged } = this.props.isLogged
+     
         return(
           <Container>
             <DescribSec>

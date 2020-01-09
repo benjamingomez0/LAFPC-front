@@ -175,7 +175,7 @@ class Healthy extends Component {
 
     render(){
       const { healthyData, editData, showEditModal, showDataModal, dataModalProperty } = this.state;
-      const { isLogged } = this.props.isLogged
+     
         return(
           <Container>
             <DescribSec>
