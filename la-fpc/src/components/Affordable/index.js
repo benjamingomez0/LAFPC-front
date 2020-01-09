@@ -207,6 +207,18 @@ class Affordable extends Component {
               
               <DescribPar>In this section, we explore progress towards improving the health of ALL Angelenos by evaluating disparities and change over time in the following categories: Increased healthy food access, Improved eating habits amongst adults & children, Rates of obesity, Rates of diet-related diseases.</DescribPar>
             </DescribSec>
+            <ChartDiv>
+              <ToolKit>
+                  <Button style={{backgroundColor:'#F4934D', marginTop:"10px"}} fullWidth>Number of Properties</Button>
+                  <Button style={{backgroundColor:'#F4934D', marginTop:"10px"}} fullWidth>Grocery Stores</Button>
+                  <Button style={{backgroundColor:'#F4934D', marginTop:"10px"}} fullWidth>Food Consumption</Button>
+                  <Button style={{backgroundColor:'#F4934D', marginTop:"10px"}} fullWidth>Obesity Percentage</Button>
+                  <Button style={{backgroundColor:'#F4934D', marginTop:"10px"}} fullWidth>Health Diagnosis Percentage</Button>
+              </ToolKit>
+              <ToolKit>
+                    <Graph affordableData={this.state.affordableData} />
+              </ToolKit>
+            </ChartDiv>
             <Table>
               <Row>
                 {
