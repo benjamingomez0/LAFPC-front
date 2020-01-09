@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch, Redirect, withRouter } from 'react-router-dom';
 import Homepage from '../Homepage';
-import AddAdmin from '../AddAdmin';
+import AddAdmin from '../addAdmin';
 import Affordable from '../Affordable';
 import Healthy from '../Healthy';
 import Fair from '../Fair';
@@ -12,6 +12,9 @@ import SignIn from '../SignIn'
 import AdminButton from '../AdminButton';
 import Container from '@material-ui/core/Container';
 import Footer from '../Footer'
+
+import 'semantic-ui-css/semantic.min.css';
+import ShowMore from '../showMore'
 
 const My404 = () => {
   return (
@@ -139,6 +142,7 @@ class App extends Component {
               <Route exact path='/home' render={(props) =>  <Homepage {...props} />}  />
               <Route exact path='/affordable' render={() => <Affordable  isLogged={this.state.isLogged}/>}/>
               <Route exact path='/healthy' render={() => <Healthy isLogged={this.state.isLogged}/>}/>
+              <Route exact path='/healthy/showmore' component={ShowMore} />
               <Route exact path='/fair' render={() => <Fair isLogged={this.state.isLogged}/>}/>
               <Route exact path='/sustainable' render={() => <Sustainable isLogged={this.state.isLogged}/>}/>
               <Route exact path='/signin' render={() => <SignIn login={this.login}/>} />
