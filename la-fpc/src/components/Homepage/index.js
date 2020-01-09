@@ -29,6 +29,10 @@ import 'semantic-ui-css/semantic.min.css'
 
 import './style.css'
 
+import SustainableData from '../Sustainable/SustainableData'
+import HealthyData from '../Healthy/HealthyData'
+import AffordableData from '../Affordable/AffordableData'
+import FairData from '../Fair/FairData'
 class Homepage extends Component {
 
     constructor (props){
@@ -42,38 +46,59 @@ class Homepage extends Component {
         this.setState({show : !show})
     }
 
+    onClickSus = () => {
+        this.setState({
+            text: < SustainableData isLogged={this.props.isLogged} />
+        });
+    }
+
+    onClickHealth = () => {
+        this.setState({
+            text: < HealthyData isLogged = { this.props.isLogged } />
+        });
+    }
+
+    onClickAfford = () => {
+        this.setState({
+            text: < AffordableData isLogged={this.props.isLogged} />
+        });
+    }
+
+    onClickFair = () => {
+        this.setState({
+            text: < FairData isLogged={this.props.isLogged} />
+        });
+    }
+
     render() {
         return (
+
             <div class='cardpage'>
+            {/* //     <div className= "sample">
+            //     <HealthyData isLogged = {this.props.isLogged} />
+            //     </div> */}
+
                 <div className="Homepage">
-                    <button onClick={this.toggleDiv}><Tiles src={sus} alt={"logo"} />+</button>
-                    <button onClick={this.toggleDiv}><Tiles src={health} alt={"logo"} />+</button>
-                    <button onClick={this.toggleDiv}><Tiles src={afford} alt={"logo"} />+</button>
-                    <button onClick={this.toggleDiv}><Tiles src={fair} alt={"logo"} />+</button>
+                    <button onClick={() => {this.toggleDiv(); this.onClickSus();}}><Tiles src={sus} alt={"logo"} />+</button>
+                    <button onClick={() => { this.toggleDiv(); this.onClickHealth(); }}><Tiles src={health} alt={"logo"} />+</button>
+                    <button onClick={() => { this.toggleDiv(); this.onClickAfford(); }}><Tiles src={afford} alt={"logo"} />+</button>
+                    <button onClick={() => { this.toggleDiv(); this.onClickFair(); }}><Tiles src={fair} alt={"logo"} />+</button>
                 </div>
-                {this.state.show && <Box />}
+                {this.state.show && <h1>{this.state.text}</h1>}
             </div>
         )
     }
 }
 
-class Box extends Component{
-    render(){
-        return(
-            <div class='box'>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut diam quam. Id ornare arcu odio ut sem nulla. Tortor posuere ac ut consequat. Vehicula ipsum a arcu cursus vitae. Eget nunc lobortis mattis aliquam faucibus. Sagittis vitae et leo duis ut. Diam sit amet nisl suscipit adipiscing. Purus sit amet luctus venenatis lectus. Volutpat lacus laoreet non curabitur. Et malesuada fames ac turpis egestas integer. Aliquet risus feugiat in ante metus dictum at. A scelerisque purus semper eget. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Lorem sed risus ultricies tristique nulla aliquet. Vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. At quis risus sed vulputate odio ut enim blandit.
-                </p>
-                <br></br>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut diam quam. Id ornare arcu odio ut sem nulla. Tortor posuere ac ut consequat. Vehicula ipsum a arcu cursus vitae. Eget nunc lobortis mattis aliquam faucibus. Sagittis vitae et leo duis ut. Diam sit amet nisl suscipit adipiscing. Purus sit amet luctus venenatis lectus. Volutpat lacus laoreet non curabitur. Et malesuada fames ac turpis egestas integer. Aliquet risus feugiat in ante metus dictum at. A scelerisque purus semper eget. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Lorem sed risus ultricies tristique nulla aliquet. Vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. At quis risus sed vulputate odio ut enim blandit.
-                </p>
-
-
-            </div>
-        )
-    }
-}
+// class Box extends Component{
+//     render(){
+//         return(
+//             <div class='box'>
+//                 <h1>hello</h1>  
+//             </div>
+//         )
+//     }
+// }
 
 export default Homepage;
 
@@ -140,6 +165,11 @@ export default Homepage;
 //                         <p>LAFPC takes great pride at the positive changes we affect in our communities. See below for our in-depth statistics and data on how much our programs improve the loves of those around us.</p>
 //                     </HeaderDiv>
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 0108f8c99c68abe24713dcc64331b124604630d7
 //                     <TileDiv>
 //                         <a href='/sustainable'><Tiles src={sus} alt={"logo"} /></a>
 //                         <a href='/healthy'><Tiles src={health} alt={"logo"} /></a>

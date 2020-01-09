@@ -23,3 +23,8 @@ div.cardpage {
   align-items: center;
   justify-content: center;
 }
+
+.sample{
+    width: 250px;
+    height:40vh;
+}
