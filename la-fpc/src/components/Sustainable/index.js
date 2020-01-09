@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import SustainableData from './SustainableData';
 import EditSustainable from './EditSustainable';
-import Donut from './SustainableChart';
+import Graph from './SustainableChart';
 import Button from '@material-ui/core/Button';
 import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
@@ -287,7 +287,7 @@ class Sustainable extends Component {
                   <Button style={{backgroundColor:'#8BC147', marginTop:"10px"}} fullWidth>Health Diagnosis Percentage</Button>
               </ToolKit>
               <ToolKit>
-                <Donut sustainableData={this.state.sustainableData} />
+                <Graph sustainableData={this.state.sustainableData} />
               </ToolKit>
             </ChartDiv>
           </Container>

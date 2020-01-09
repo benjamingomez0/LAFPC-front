@@ -29,7 +29,7 @@ class App extends Component {
 
   state = {
     user: null,
-    laoding: true,
+    loading: true,
     isLogged: false,
     data: [],
     affordable: [],
@@ -63,7 +63,7 @@ class App extends Component {
       console.log(localStorage, 'this is local storage')
       this.setState({
         user: parsedResponse.data,
-        laoding: false,
+        loading: false,
         isLogged: true
       })
 

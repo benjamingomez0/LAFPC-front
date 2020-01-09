@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import FairData from './FairData';
 import EditFair from './EditFair';
-import Donut from './FairChart';
+import Graph from './FairChart';
 import Button from '@material-ui/core/Button';
 import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
@@ -286,7 +286,7 @@ class Fair extends Component {
                   <Button style={{backgroundColor:'#D6D7AD', marginTop:"10px"}} fullWidth>Health Diagnosis Percentage</Button>
               </ToolKit>
               <ToolKit>
-                <Donut fairData={this.state.fairData} />
+                <Graph fairData={this.state.fairData} />
               </ToolKit>
             </ChartDiv>
             

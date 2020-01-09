@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import AffordableData from './AffordableData';
 import EditAffordable from './EditAffordable';
-import Donut from './AffordChart';
+import Graph from './AffordChart';
 import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import EditIcon from '@material-ui/icons/Edit';
@@ -285,7 +285,7 @@ class Affordable extends Component {
                   <Button style={{backgroundColor:'#F4934D', marginTop:"10px"}} fullWidth>Health Diagnosis Percentage</Button>
               </ToolKit>
               <ToolKit>
-                    <Donut affordableData={this.state.affordableData} />
+                    <Graph affordableData={this.state.affordableData} />
               </ToolKit>
             </ChartDiv>
           </Container>

@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import { Doughnut } from 'react-chartjs-2'
+import { Line } from 'react-chartjs-2'
 import style from './style.module.css'
 
 
-class Donut extends Component {
+class Graph extends Component {
 
     colorHandler = (array, o) => {
         const r = () => Math.floor(Math.random() * 256)
@@ -26,7 +26,9 @@ class Donut extends Component {
         const data = {
             labels: props.healthyData.map(r => { return r.group }),
             datasets: [{
-                data: props.healthyData.map(r => { return r.baseline }),
+                data: props.healthyData.map(r => { return r.val2013 }),
+                data: props.healthyData.map(r => { return r.val2017 }),
+                data: props.healthyData.map(r => { return r.val2020 }),
                 backgroundColor: colorArray,
                 hoverBackgroundColor: this.hover(colorArray)
             }]
@@ -39,11 +41,11 @@ class Donut extends Component {
             <div>
                 <div className={style.canvas}>
                   <h3>{this.props.healthyData[0] && this.props.healthyData[0].indicator}</h3>
-                        <Doughnut data={this.dataHandler(this.props)} />
+                        <Line data={this.dataHandler(this.props)} />
                     </div>
             </div>
         )
     }
 }
 
-export default Donut;
+export default Graph;
