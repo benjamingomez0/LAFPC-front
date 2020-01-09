@@ -55,3 +55,9 @@ export const UserImg = styled.img`
        opacity: .8;
     }
 `
+// export const Button = styled.button`
+//     width: 75px;
+//     height:50px;
+//     color:red;
+
+// `

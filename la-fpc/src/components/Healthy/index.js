@@ -32,15 +32,14 @@ class Healthy extends Component {
     dataModalProperty: '',
     editData: {
       _id: null,
-      value:'healthy',
+      pillar:'healthy',
       indicator: '',
-      baseline: '',
-      update: '',
-      sources: '',
-      change: '',
-      notes: '',
-      dataStatus: '',
-      group: '',
+      location: '',
+      source: '',
+      val2013: '',
+      val2017: '',
+      val2020: '',
+      outcome: '',
       error: ''
     },
   }
@@ -215,13 +214,13 @@ class Healthy extends Component {
                   null
                 }
                 <TableDataHeader><H1>Indicator</H1></TableDataHeader>
-                <TableDataHeader><H1>Baseline</H1></TableDataHeader>
-                <TableDataHeader><H1>Update</H1></TableDataHeader>
-                <TableDataHeader><H1>Sources</H1></TableDataHeader>
-                <TableDataHeader><H1>Change</H1></TableDataHeader>
-                <TableDataHeader><H1>Notes</H1></TableDataHeader>
-                <TableDataHeader><H1>Data Status</H1></TableDataHeader>
+                <TableDataHeader><H1>Location</H1></TableDataHeader>
                 <TableDataHeader><H1>Group</H1></TableDataHeader>
+                <TableDataHeader><H1>Source</H1></TableDataHeader>
+                <TableDataHeader><H1>2013</H1></TableDataHeader>
+                <TableDataHeader><H1>2017</H1></TableDataHeader>
+                <TableDataHeader><H1>2020</H1></TableDataHeader>
+                <TableDataHeader><H1>Outcome</H1></TableDataHeader>
               </Row>
               {
                 healthyData.map((data, i) => {

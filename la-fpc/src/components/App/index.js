@@ -55,7 +55,8 @@ class App extends Component {
           'Content-Type': 'application/json'
         }
       })
-      const parsedResponse = await registerResponse.json()
+      const parsedResponse = await registerResponse.json();
+      console.log(parsedResponse,'<===== this is admin')
       console.log(parsedResponse, 'this is register response')
       localStorage.setItem('admin', parsedResponse.data.username)
       localStorage.setItem('loggedIn', true)
@@ -137,7 +138,7 @@ class App extends Component {
                 : 
                 <Route exact path='/' render={(props) =>  <Homepage {...props} />}  />
               }
-              <Route exact path='/addadmin' render={(props) =>  <AddAdmin register={this.register}  {...props} />} />
+              <Route exact path='/addAdmin' render={(props) =>  <AddAdmin register={this.register}  {...props} />} />
               <Route exact path='/' render={(props) =>  <Homepage {...props} />}  />
               <Route exact path='/home' render={(props) =>  <Homepage {...props} />}  />
               <Route exact path='/affordable' render={() => <Affordable  isLogged={this.state.isLogged}/>}/>
