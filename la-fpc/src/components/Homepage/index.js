@@ -219,13 +219,13 @@ class Homepage extends Component {
                 </a>
                 </header>
                 <section>
-                    <div class='cardpagpe'>
+                    <div className='cardpage'>
                         <div className="Homepagep" id ="cards">
                         <Grid columns={4} >
                                 <Grid.Column style={{padding:0 }} >
                                     <button onClick={() => { this.onClickSus();}}  className="oneThree"><Tiles src={sus} alt={"logo"} />
                                         <h3>Sustainable</h3>
-                                        <p>See how we ensure and expand the impact for sustainable food practtices.</p>
+                                        <p>See how we ensure and expand the impact for sustainable food practices.</p>
                                         <Icon name='add' />
                                     </button>
                                 </Grid.Column>
