@@ -1,30 +1,91 @@
 button {
-    border: red 2px solid;
-    border: 1px solid black;
-    display: inline;
-    align-items: center;
-    justify-content: center;
-}
-
-div.cardpage {
-    border: red 2px solid;
-}
-
-.Homepage {
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.box {
-  border: 1px solid black;
+  /* border: red 2px solid; */
+  /* border: 1px solid black; */
   display: inline;
   align-items: center;
   justify-content: center;
+  border-style: none;
+  background-color:#D5DEAE;
+  padding: 0%;
+}
+.oneThree {
+background-color : #ffffff;
+}
+/* div.cardpage {
+  border: red 2px solid;
+} */
+/* .Homepage {
+border: 1px solid black;
+display: flex;
+align-items: center;
+justify-content: center;
+} */
+.box {
+/* border: 1px solid black; */
+display: inline;
+align-items: center;
+justify-content: center;
+}
+.sample{
+  width: 250px;
+  height:40vh;
+}
+.card {
+background-color: #D5DEAE;
+}
+header {
+position: relative;
+height: 800px;
+min-height: 500px;
+width: 100%;
+background: #161415 url(./img/apple-biz.jpg) no-repeat top center;
+background-size: cover !important;
+-webkit-background-size: cover !important;
+text-align: center;
+overflow: hidden;
+}
+header .scrolldown a {
+position: absolute;
+bottom: 30px;
+left: 50%;
+margin-left: -29px;
+color: #fff;
+display: block;
+height: 42px;
+width: 42px;
+font-size: 42px;
+line-height: 42px;
+color: #fff;
+border-radius: 100%;
+-webkit-transition: all .3s ease-in-out;
+-moz-transition: all .3s ease-in-out;
+-o-transition: all .3s ease-in-out;
+transition: all .3s ease-in-out;
+}
+header .scrolldown a:hover { color: #4c54f5; }
+
+.homepage-header-text{
+  color:white;
+  font-size:12rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-top:250px !important;
+  opacity:.8;
+
 }
 
-.sample{
-    width: 250px;
-    height:40vh;
+/* .svg-container{
+ border: 3px solid white;
+ width:17vh;
+ height:17vh;
+ border-radius:50%;
+ margin: 0 auto;
+} */
+
+.down-arrow{
+  width:12vh;
+  height:6vh;
+  opacity:.7;
+}
+.down-arrow:hover{
+  opacity:1;
 }

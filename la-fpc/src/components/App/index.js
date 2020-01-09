@@ -15,7 +15,7 @@ import Footer from '../Footer'
 
 import 'semantic-ui-css/semantic.min.css';
 import ShowMore from '../showMore'
-
+import './style.css'
 const My404 = () => {
   return (
     <div>

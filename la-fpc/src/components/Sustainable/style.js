@@ -42,7 +42,7 @@ export const TableData = styled.div`
   text-align: center;
   overflow: hidden;
   &:hover {
-    background: #8bc147;
+    background: white;
     opacity: .8;
   }
 `

@@ -15,17 +15,16 @@ import {HomeDiv,
 import './style.css'
 
 //image imports
-import afford from "./img/Afford.png"
-import fair from "./img/Fair.png"
-import health from "./img/Health.png"
-import sus from "./img/Sus.png"
-import Food from "./img/Food.png"
-import Compost from "./img/Compost.png"
-import Plant from "./img/Plant.png"
+import afford from "./img/affordable.png"
+import fair from "./img/fair.png"
+import health from "./img/healthy.png"
+import sus from "./img/sustainable.png"
+import appleBiz from "./img/apple-biz.jpg"
+
 
 //style libraries imports
 import 'semantic-ui-css/semantic.min.css'
-import { Input, Menu, Segment } from 'semantic-ui-react'
+import { Input, Menu, Segment, Icon, Grid } from 'semantic-ui-react'
 
 //component imports
 import SustainableData from '../Sustainable/SustainableData'
@@ -204,15 +203,82 @@ class Homepage extends Component {
     render() {
         return (
 
-            <div class='cardpage'>
-                <div className="Homepage">
-                    <button onClick={() => { this.onClickSus();}}><Tiles src={sus} alt={"logo"} />+</button>
-                    <button onClick={() => { this.onClickHealth(); }}><Tiles src={health} alt={"logo"} />+</button>
-                    <button onClick={() => {  this.onClickAfford(); }}><Tiles src={afford} alt={"logo"} />+</button>
-                    <button onClick={() => { this.onClickFair(); }}><Tiles src={fair} alt={"logo"} />+</button>
-                </div>
-                {this.state.show && <div>{this.state.text}</div>}
+
+            <div>
+                <header className = "home-cover">
+                    <h1 className="homepage-header-text">Food Should Be...</h1>
+                    <a href="#cards">
+                    <div className="svg-container">
+                        <svg className="down-arrow" version="1.1" viewBox="0 0 129 129" enable-background="new 0 0 129 129" width="512px" height="512px">
+                            <g>
+                                <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z" fill="#ffffff"/>
+                            </g>
+                        </svg>
+
+                    </div>
+                </a>
+                </header>
+                <section>
+                    <div class='cardpagpe'>
+                        <div className="Homepagep" id ="cards">
+                        <Grid columns={4} >
+                                <Grid.Column style={{padding:0 }} >
+                                    <button onClick={() => { this.onClickSus();}}  className="oneThree"><Tiles src={sus} alt={"logo"} />
+                                        <h3>Sustainable</h3>
+                                        <p>See how we ensure and expand the impact for sustainable food practtices.</p>
+                                        <Icon name='add' />
+                                    </button>
+                                </Grid.Column>
+                                <Grid.Column style={{padding: 0}}>
+                                    <button onClick={() => { this.onClickHealth(); }}><Tiles src={health} alt={"logo"} />
+                                        <h3>Healthy</h3>
+                                        <p>See how our efforts are improving people's health within our diverse community.</p>
+                                        <Icon name='add' />
+                                    </button>
+                                </Grid.Column>
+                                <Grid.Column style={{padding: 0}}>
+                                    <button onClick={() => {  this.onClickAfford(); }} className="oneThree"><Tiles src={afford} alt={"logo"} />
+                                        <h3>Affordable</h3>
+                                        <p>See our success in providing affordable, fresh food to locals. This data compares previous outcomes.</p>
+                                        <Icon name='add' />
+                                    </button>
+                                </Grid.Column>
+                                <Grid.Column style={{padding: 0}}>
+                                <button onClick={() => { this.onClickFair(); }}><Tiles src={fair} alt={"logo"} />
+                                    <h3>Fair</h3>
+                                    <p>See how we curate fair prices for the food we help to bring to communities across LA</p>
+                                    <Icon name='add' />
+                                </button>
+                                </Grid.Column>
+                            </Grid>
+                        </div>
+                        <br/>
+                        <br/>
+                        {this.state.show && <div>{this.state.text}</div>}
+                    </div>
+                </section>
+
             </div>
+
+
+            // <div className='cardpage'>
+            //     {/* <div className="cover-div">
+            //         <img className ="cover-image" src= {appleBiz}/>
+            //         <div className = "cover-text">
+            //             Food Should be...
+            //             <br/>
+            //             <Icon name='chevron down' size='big' className = "cover-chevron" />
+            //         </div>
+            //     </div> */}
+            //     <div className="Homepage">
+                    
+            //         <button onClick={() => { this.onClickSus();}}><Tiles src={sus} alt={"logo"} />+</button>
+            //         <button onClick={() => { this.onClickHealth(); }}><Tiles src={health} alt={"logo"} />+</button>
+            //         <button onClick={() => {  this.onClickAfford(); }}><Tiles src={afford} alt={"logo"} />+</button>
+            //         <button onClick={() => { this.onClickFair(); }}><Tiles src={fair} alt={"logo"} />+</button>
+            //     </div>
+            //     {this.state.show && <div>{this.state.text}</div>}
+            // </div>
         )
     }
 }
