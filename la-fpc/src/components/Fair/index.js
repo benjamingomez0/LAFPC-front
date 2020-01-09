@@ -64,7 +64,7 @@ class Fair extends Component {
       })
       const oldData = await data.json()
       console.log(oldData.data)
-      const fairData = oldData.data.filter(data => data.value === 'fair')
+      const fairData = oldData.data.filter(data => data.pillar === 'fair')
       this.setState({
         fairData: fairData
       })
