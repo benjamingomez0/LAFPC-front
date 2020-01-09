@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Doughnut } from 'react-chartjs-2'
+import { Bar } from 'react-chartjs-2'
 import style from './style.module.css'
 
 
@@ -39,7 +39,7 @@ class Donut extends Component {
             <div>
                 <div className={style.canvas}>
                   <h3>Baseline {this.props.affordableData[0] && this.props.affordableData[0].indicator}</h3>
-                        <Doughnut data={this.dataHandler(this.props)} />
+                        <Bar data={this.dataHandler(this.props)} />
                     </div>
             </div>
         )
