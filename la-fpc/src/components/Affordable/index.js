@@ -178,7 +178,7 @@ class Affordable extends Component {
 
     render(){
       const { affordableData, editData, showEditModal, showDataModal, dataModalProperty } = this.state;
-      const { isLogged } = this.props.isLogged
+      // const { isLogged } = this.props.isLogged
       console.log(this.props.isLogged, 'this is logged')
         return(
           <Container>
