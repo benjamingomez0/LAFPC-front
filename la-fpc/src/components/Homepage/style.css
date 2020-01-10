@@ -63,9 +63,9 @@ header .scrolldown a:hover { color: #4c54f5; }
 
 .homepage-header-text{
   color:white;
-  font-size:12rem;
+  font-size:10rem;
   font-family: 'Montserrat', sans-serif;
-  margin-top:250px !important;
+  margin-top:15% !important;
   opacity:.8;
 
 }
@@ -95,4 +95,7 @@ button img:hover {
   border-radius:5px;
   float:right;
   margin-right: 50px;
+}
+.text-container {
+  height: 8vh
 }
