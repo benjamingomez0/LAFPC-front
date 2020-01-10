@@ -13,9 +13,15 @@ class Footer extends Component{
             <MainDiv>
                 <LeftDiv>
                     <h3>STAY CONNECTED</h3>
-                    <FacebookIcon style={{margin:'10px'}}/>
-                    <InstagramIcon style={{margin:'10px'}}/>
-                    <TwitterIcon style={{margin:'10px'}}/>
+                    <a href="https://www.facebook.com/LosAngelesFoodPolicyCouncil" target="_blank">
+                        <FacebookIcon style={{margin:'15px'}}/>
+                    </a>
+                    <a href="https://www.instagram.com/lagoodfood/" target="_blank">
+                        <InstagramIcon style={{margin:'15px'}}/>
+                    </a>
+                    <a href="https://twitter.com/GoodFoodLA" target="_blank">
+                        <TwitterIcon style={{margin:'15px'}}/>
+                    </a>
                     <br/>
                     <Button
                         component={LinkRoute}
@@ -29,14 +35,7 @@ class Footer extends Component{
                 <RightDiv>
                     <h3>GET INVOLVED</h3>
                     <Button variant="contained" style={{backgroundColor:'orange'}}>DONATE</Button>
-                        {/* <Button
-                            component={LinkRoute}
-                            to='/SignIn'
-                            color="inherit"
-                            style={{ margin: '20px', color: 'white', fontWeight: 'bold' }}
-                        >
-                            Admin
-                        </Button> */}
+                 
                 </RightDiv>
             </MainDiv>
             <SecondDiv>
