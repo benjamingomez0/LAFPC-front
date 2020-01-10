@@ -36,6 +36,7 @@ import Sustainable from '../Sustainable';
 import ShowMore from '../showMore';
 
 
+
 class Homepage extends Component {
     
     state = {
@@ -79,7 +80,7 @@ class Homepage extends Component {
                     aff:false,
                     health:false,
                     fair:false,
-                    text: <div>< Sustainable isLogged={this.props.isLogged} /><Link to ={'/'}><button> Show More </button></Link></div>
+                    text: <div>< Sustainable isLogged={this.props.isLogged} /><Link to ={'/sustainable/showmore'}><button> Show More </button></Link></div>
                     });  
             }
 
@@ -127,7 +128,7 @@ class Homepage extends Component {
     onClickAfford = () => {
         if(this.state.show)//if show is true
         {
-            if(this.state.aff=== true )//and if text ===affortable
+            if(this.state.aff=== true )
             {
                 this.setState({
                     show : !this.state.show,
@@ -140,7 +141,7 @@ class Homepage extends Component {
             else
             {
                 this.setState({
-                    text:<div>< Affordable isLogged={this.props.isLogged} /><Link to ={'/'}><button> Show More </button></Link></div>,   
+                    text:<div>< Affordable isLogged={this.props.isLogged} /><Link to ={'/affordable/showmore'}><button> Show More </button></Link></div>,   
                     aff:!this.state.aff,
                     health:false,
                     sus:false,
@@ -157,7 +158,7 @@ class Homepage extends Component {
                 health:false,
                 sus:false,
                 fair:false,
-                text: <div>< Affordable isLogged={this.props.isLogged} /><Link to ={'/'}><button> Show More </button></Link></div>   
+                text: <div>< Affordable isLogged={this.props.isLogged} /><Link to ={'/affordable/showmore'}><button> Show More </button></Link></div>   
                 });  
         }
     }
@@ -178,7 +179,7 @@ class Homepage extends Component {
             else
             {
                 this.setState({
-                    text: <div>< Fair isLogged={this.props.isLogged} /><Link to ={'/'}><button> Show More </button></Link></div>,   
+                    text: <div>< Fair isLogged={this.props.isLogged} /><Link to ={'/fair/showmore'}><button> Show More </button></Link></div>,   
                     fair:!this.state.fair,
                     health:false,
                     sus:false,
@@ -195,7 +196,7 @@ class Homepage extends Component {
                 health:false,
                 sus:false,
                 aff:false,
-                text: <div>< Fair isLogged={this.props.isLogged} /><Link to ={'/'}><button> Show More </button></Link></div>   
+                text: <div>< Fair isLogged={this.props.isLogged} /><Link to ={'/fair/showmore'}><button> Show More </button></Link></div>   
                 });  
         }
     }

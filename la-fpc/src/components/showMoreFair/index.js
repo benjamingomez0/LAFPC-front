@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 import MyPopup from '../util/MyPopup';
 
-export default class ShowMore extends Component {
+export default class ShowMoreSus extends Component {
     state = {
-        healthyData:[],
+       Data:[],
         isLoading: true
     };
 
@@ -24,9 +24,9 @@ export default class ShowMore extends Component {
                 }
             })
             const oldData = await data.json()
-            const healthData = oldData.data.filter(data => data.pillar === 'healthy')
+            const newData = oldData.data.filter(data => data.pillar === 'fair')
             this.setState({
-                healthyData: healthData
+                Data: newData
             })
     
         }catch (err) {
@@ -35,7 +35,7 @@ export default class ShowMore extends Component {
     };
 
     render() {
-        const { healthyData } = this.state;
+        const { Data } = this.state;
         return (
         <Container>
             <Grid columns={3}>
@@ -43,7 +43,7 @@ export default class ShowMore extends Component {
                     {
                         <Transition.Group>
                             {
-                                healthyData && healthyData.map((data) => {
+                                Data && Data.map((data) => {
                                     return (
                                         <Grid.Column key={data._id} style={{ marginBottom: 20 }}>
                                             <Card color="violet" fluid>
@@ -54,7 +54,7 @@ export default class ShowMore extends Component {
                                                 <Card.Content extra>
                                                     <MyPopup content="Information about the Data">
                                                         
-                                                        <Button floated='right' as={Link} to={`/healthy`} color='blue'>
+                                                        <Button floated='right' as={Link} to={`/fair`} color='blue'>
                                                             <Icon name='add' color='white' size='large'/>
                                                         </Button>
                                                     </MyPopup>

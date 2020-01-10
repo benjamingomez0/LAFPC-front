@@ -15,7 +15,7 @@ class Navbar extends Component {
                             size='large'
                             className='nav-button'
                             component={ LinkRoute } 
-                            to='/sustainable'
+                            to='/sustainable/showmore'
                             style={{backgroundColor:'#ADC692', color:'white', fontWeight:'bold', borderColor:'#ADC692'}}
                         >
                             Sustainability
@@ -32,7 +32,7 @@ class Navbar extends Component {
                         <Button
                             className='nav-button' 
                             component={ LinkRoute } 
-                            to='/affordable' 
+                            to='/affordable/showmore' 
                             style={{backgroundColor:'#7ED3B1', color:'white', fontWeight:'bold', borderColor:'#7ED3B1'}}
                         >
                             Affordability
@@ -40,7 +40,7 @@ class Navbar extends Component {
                         <Button
                             className='nav-button' 
                             component={ LinkRoute } 
-                            to='/fair' 
+                            to='/fair/showmore' 
                             style={{backgroundColor:'#FFC108', color:'white', fontWeight:'bold', borderColor:'#FFC108'}}
                         >
                             Fairness
