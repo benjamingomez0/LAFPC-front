@@ -16,7 +16,7 @@ import './style.css'
 
 //image imports
 import afford from "./img/affordable.png"
-import fair from "./img/Fair.png"
+import fair from "./img/fair.png"
 import health from "./img/healthy.png"
 import sus from "./img/sustainable.png"
 import appleBiz from "./img/apple-biz.jpg"
@@ -225,29 +225,33 @@ class Homepage extends Component {
                                 <Grid.Column style={{padding:0 }} >
                                     <button onClick={() => { this.onClickSus();}}  className="oneThree"><Tiles src={sus} alt={"logo"} />
                                         <h3>Sustainable</h3>
-                                        <p>See how we ensure and expand the impact for sustainable food practices.</p>
-                                        <Icon name='add' />
+                                        <div className="text-container">See how we ensure and expand the impact for sustainable food practices.</div>
+                                        {this.state.sus ? <Icon name='minus' /> : <Icon name='add' />
+                                        }
                                     </button>
                                 </Grid.Column>
                                 <Grid.Column style={{padding: 0}}>
                                     <button onClick={() => { this.onClickHealth(); }}><Tiles src={health} alt={"logo"} />
                                         <h3>Healthy</h3>
-                                        <p>See how our efforts are improving people's health within our diverse community.</p>
-                                        <Icon name='add' />
+                                        <div className="text-container">See how our efforts are improving people's health within our diverse community.</div>
+                                        {this.state.health ? <Icon name='minus' /> : <Icon name='add' />
+                                        }
                                     </button>
                                 </Grid.Column>
                                 <Grid.Column style={{padding: 0}}>
                                     <button onClick={() => {  this.onClickAfford(); }} className="oneThree"><Tiles src={afford} alt={"logo"} />
                                         <h3>Affordable</h3>
-                                        <p>See our success in providing affordable, fresh food to locals. This data compares previous outcomes.</p>
-                                        <Icon name='add' />
+                                        <div className="text-container">See our success in providing affordable, fresh food to locals. This data compares previous outcomes.</div>
+                                        {this.state.aff ? <Icon name='minus' /> : <Icon name='add' />
+                                        }
                                     </button>
                                 </Grid.Column>
                                 <Grid.Column style={{padding: 0}}>
                                 <button onClick={() => { this.onClickFair(); }}><Tiles src={fair} alt={"logo"} />
                                     <h3>Fair</h3>
-                                    <p>See how we curate fair prices for the food we help to bring to communities across LA</p>
-                                    <Icon name='add' />
+                                    <div className="text-container">See how we curate fair prices for the food we help to bring to communities across LA</div>
+                                    {this.state.fair ? <Icon name='minus' /> : <Icon name='add' />
+                                    }
                                 </button>
                                 </Grid.Column>
                             </Grid>
@@ -260,25 +264,6 @@ class Homepage extends Component {
 
             </div>
 
-
-            // <div className='cardpage'>
-            //     {/* <div className="cover-div">
-            //         <img className ="cover-image" src= {appleBiz}/>
-            //         <div className = "cover-text">
-            //             Food Should be...
-            //             <br/>
-            //             <Icon name='chevron down' size='big' className = "cover-chevron" />
-            //         </div>
-            //     </div> */}
-            //     <div className="Homepage">
-                    
-            //         <button onClick={() => { this.onClickSus();}}><Tiles src={sus} alt={"logo"} />+</button>
-            //         <button onClick={() => { this.onClickHealth(); }}><Tiles src={health} alt={"logo"} />+</button>
-            //         <button onClick={() => {  this.onClickAfford(); }}><Tiles src={afford} alt={"logo"} />+</button>
-            //         <button onClick={() => { this.onClickFair(); }}><Tiles src={fair} alt={"logo"} />+</button>
-            //     </div>
-            //     {this.state.show && <div>{this.state.text}</div>}
-            // </div>
         )
     }
 }
