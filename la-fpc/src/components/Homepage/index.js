@@ -68,7 +68,16 @@ class Homepage extends Component {
                         sus:true,
                         fair:false,
                         health: false,
-                        text: <div>< Sustainable isLogged={this.props.isLogged} /><Link to ={'/'}><button> Show More </button></Link></div>,
+                        text: <div >
+                        < Sustainable isLogged={this.props.isLogged} />
+                        <div className="button-div">
+                        <Link to ={'/sustainable/showmore'}>
+                            <button className="showMore"> Show More </button>
+                        </Link>
+                        </div>
+                        <br/>
+                        <br/>
+                        </div>
                     });  
                 }            
             }
@@ -80,7 +89,16 @@ class Homepage extends Component {
                     aff:false,
                     health:false,
                     fair:false,
-                    text: <div>< Sustainable isLogged={this.props.isLogged} /><Link to ={'/sustainable/showmore'}><button> Show More </button></Link></div>
+                    text: <div >
+                        < Sustainable isLogged={this.props.isLogged} />
+                        <div className="button-div">
+                        <Link to ={'/sustainable/showmore'}>
+                            <button className="showMore"> Show More </button>
+                        </Link>
+                        </div>
+                        <br/>
+                        <br/>
+                    </div>
                     });  
             }
 
@@ -107,7 +125,16 @@ class Homepage extends Component {
                     sus:false,
                     fair:false,
                     health: true,
-                    text: <div>< Healthy isLogged = { this.props.isLogged } /><Link to ={'/healthy/showmore'}><button> Show More </button></Link></div>,
+                    text:<div >
+                    < Healthy isLogged={this.props.isLogged} />
+                    <div className="button-div">
+                    <Link to ={'/healthy/showmore'}>
+                        <button className="showMore"> Show More </button>
+                    </Link>
+                    </div>
+                    <br/>
+                    <br/>
+                </div>
             });  
             }            
         }
@@ -119,7 +146,16 @@ class Homepage extends Component {
                 aff:false,
                 sus:false,
                 fair:false,
-                text: <div>< Healthy isLogged = { this.props.isLogged } /><Link to ={'/healthy/showmore'}><button> Show More </button></Link></div>
+                text: <div >
+                < Healthy isLogged={this.props.isLogged} />
+                <div className="button-div">
+                <Link to ={'/healthy/showmore'}>
+                    <button className="showMore"> Show More </button>
+                </Link>
+                </div>
+                <br/>
+                <br/>
+            </div>
                 });  
         }
 
@@ -141,7 +177,16 @@ class Homepage extends Component {
             else
             {
                 this.setState({
-                    text:<div>< Affordable isLogged={this.props.isLogged} /><Link to ={'/affordable/showmore'}><button> Show More </button></Link></div>,   
+                    text:<div >
+                    < Affordable isLogged={this.props.isLogged} />
+                    <div className="button-div">
+                    <Link to ={'/affordable/showmore'}>
+                        <button className="showMore"> Show More </button>
+                    </Link>
+                    </div>
+                    <br/>
+                    <br/>
+                </div>,   
                     aff:!this.state.aff,
                     health:false,
                     sus:false,
@@ -158,7 +203,16 @@ class Homepage extends Component {
                 health:false,
                 sus:false,
                 fair:false,
-                text: <div>< Affordable isLogged={this.props.isLogged} /><Link to ={'/affordable/showmore'}><button> Show More </button></Link></div>   
+                text: <div >
+                < Affordable isLogged={this.props.isLogged} />
+                <div className="button-div">
+                <Link to ={'/affordable/showmore'}>
+                    <button className="showMore"> Show More </button>
+                </Link>
+                </div>
+                <br/>
+                <br/>
+            </div>  
                 });  
         }
     }
@@ -179,7 +233,16 @@ class Homepage extends Component {
             else
             {
                 this.setState({
-                    text: <div>< Fair isLogged={this.props.isLogged} /><Link to ={'/fair/showmore'}><button> Show More </button></Link></div>,   
+                    text: <div >
+                    < Fair isLogged={this.props.isLogged} />
+                    <div className="button-div">
+                    <Link to ={'/fair/showmore'}>
+                        <button className="showMore"> Show More </button>
+                    </Link>
+                    </div>
+                    <br/>
+                    <br/>
+                </div>,   
                     fair:!this.state.fair,
                     health:false,
                     sus:false,
@@ -196,7 +259,16 @@ class Homepage extends Component {
                 health:false,
                 sus:false,
                 aff:false,
-                text: <div>< Fair isLogged={this.props.isLogged} /><Link to ={'/fair/showmore'}><button> Show More </button></Link></div>   
+                text: <div >
+                < Fair isLogged={this.props.isLogged} />
+                <div className="button-div">
+                <Link to ={'/fair/showmore'}>
+                    <button className="showMore"> Show More </button>
+                </Link>
+                </div>
+                <br/>
+                <br/>
+            </div>  
                 });  
         }
     }
