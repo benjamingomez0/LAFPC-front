@@ -52,7 +52,7 @@ class AdminHome extends Component{
                                     </Link>
                                 </Grid.Column>
                                 <Grid.Column style={{padding: 10}}>
-                                   <Link to={'/Linkffordable'}>
+                                   <Link to={'/affordable'}>
                                         <button onClick={() => {  console.log('hit'); }} className="oneThree"><Tiles src={afford} alt={"logo"} />
                                             <h3>Affordable</h3>
                                             
