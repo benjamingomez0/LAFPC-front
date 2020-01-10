@@ -87,14 +87,13 @@ button img {
 button img:hover {
   transform: scale(1.05);
 }
-.showMore{
 
-}
 .button-div{
   width:104px;
   border-radius:5px;
   float:right;
   margin-right: 50px;
+
 }
 .text-container {
   height: 8vh
